@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+.itens {
+    display: flex;
+    gap: 25px;
+}
+
+.botao {
+
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #BE0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cabecalho img {
+    width: 200px;
+}
+
+.hero {
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(assets/capa.jpeg);
+}
+
+.hero h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 4em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.hero p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.hero2 {
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}

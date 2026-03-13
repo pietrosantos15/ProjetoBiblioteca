@@ -1,13 +1,14 @@
 * {
     margin: 0;
-
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5vh 0;
+    padding: 1vh 0;
 }
 
 .itens {
@@ -16,7 +17,6 @@
 }
 
 .botao {
-
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -30,7 +30,6 @@
 }
 
 .hero {
-    width: 100vw;
     height: 95vh;
     justify-content: center;
     align-items: center;
@@ -54,7 +53,6 @@
 }
 
 .hero2 {
-    width: 100vw;
     height: 95vh;
     justify-content: flex-start;
     padding: 60px;
@@ -107,7 +105,6 @@
     background-color: #f9f9f9;
 }
 
-/* Alinha o título e o "View All" */
 .topo-livros {
     display: flex;
     justify-content: space-between;
@@ -116,27 +113,31 @@
 }
 
 .topo-livros a {
-    color: #d35400; /* Mesma cor que você usou no seu botão de busca */
+    color: #d35400;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Container dos cartões */
+
 .grade-livros {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* Para quebrar linha no celular */
+    flex-wrap: wrap;
 }
 
-/* Estilo de cada cartão branco */
+
+
 .card-livro {
     background-color: white;
     padding: 15px;
-    border-radius: 15px;
     width: 220px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+
+
+
+
 
 .imagem-container {
     background-color: #eee;
@@ -149,7 +150,6 @@
 .imagem-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .card-livro h3 {
@@ -164,18 +164,184 @@
     margin-bottom: 15px;
 }
 
-/* Botão Borrow estilizado */
+
 .botao-emprestar {
     width: 100%;
-    background-color: #fbeee6; /* Um laranja bem clarinho */
-    color: #d35400;            /* O laranja forte do seu botão */
+    background-color: #fbeee6;
+    color: #d35400;            
     border: none;
     padding: 12px;
     border-radius: 8px;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.botao-emprestar:hover {
-    background-color: #f6ddcc;
+
+
+
+
+
+.imagem-container-evento {
+    background-color: #eee;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    
+}
+
+.card-evento {
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.topo-eventos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grade-eventos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topo-eventos a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.textocima {
+    font-size: 15px;
+    color: #f57803;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: start;
+}
+
+.eventos {
+    padding: 50px 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+/* help section */
+.como-ajudamos {
+    padding: 50px 10vw;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.como-ajudamos h2 {
+    margin-bottom: 10px;
+}
+
+.subtitulo-ajuda {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.ajuda-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ajuda-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.ajuda-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.ajuda-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.ajuda-item p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+
+.rodape {
+    background-color: #222;
+    color: #eee;
+    padding: 40px 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.footer-col p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 4px 0;
+}
+.card-evento a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card-evento h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #222;
+    margin: 10px 0 5px;
+}
+
+.card-evento p, a {
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+.card-evento {
+    position: relative;
+}
+
+.calendario {
+    background-color: #eee;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    overflow: hidden;
 }
